@@ -63,7 +63,7 @@ casper.thenOpen(hostname + '/login/reset/ren@stimpy/57d3149488275d0dc6bf6f8e', f
 casper.thenOpen(hostname + '/login', function () {
 
     this.fill('form', { username: 'root', password: 'root' });
-    this.click('button');
+    this.click('form button');
     this.waitFor(function check() {
 
         return this.evaluate(function () {
@@ -242,7 +242,7 @@ casper.thenOpen(hostname + '/login/logout', function () {
 casper.thenOpen(hostname + '/login', function () {
 
     this.fill('form', { username: 'jimmy', password: 'test' });
-    this.click('button');
+    this.click('form button');
     this.waitFor(function check() {
 
         return this.evaluate(function () {
