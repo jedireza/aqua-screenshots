@@ -1,6 +1,6 @@
 {
   "name": "aqua-screenshots",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "halp": "which casperjs",
     "start": "rm -rf screenshots/* && casperjs --verbose --log-level=$LOG_LEVEL index.js",
